@@ -2,6 +2,7 @@
 # $Id: Portfile 76485 2011-02-25 17:06:53Z ricci@macports.org $
 
 PortSystem      1.0
+PortGroup	select 1.0
 
 name            perl5.8
 version         5.8.9
@@ -29,6 +30,9 @@ checksums        \
     rmd160  680004238d626ec985075e1b4519b7f0b34f57e5
 
 patchfiles  patch-perl.c.diff patch-Configure.diff
+
+select.group	perl
+select.file	${filespath}/perl${branch}
 
 post-patch {
     reinplace "s|/opt/local|${prefix}|g" ${worksrcpath}/Configure

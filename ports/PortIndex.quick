@@ -1,1 +1,4 @@
-perl_select 0
+perl5.10 0
+perl5.12 571
+perl5.8 1142
+perl_select 1722

@@ -1,8 +1,8 @@
 # $Id: Portfile 79068 2011-06-01 02:01:38Z jeremyhu@macports.org $
 
 PortSystem      1.0
+PortGroup	select 1.0
 
-PortGroup select 1.0
 name            perl5.12
 version         5.12.3
 revision        1
@@ -28,6 +28,9 @@ checksums           md5     72f3f7e1c700e79bbf9d9279ca5b42d9 \
                     rmd160  e3c5825aa800e2304dd815858880372500a4f9a0
 
 patchfiles	patch-Configure.diff patch-handy.h.stdbool.diff
+
+select.group	perl
+select.file	${filespath}/perl${branch}
 
 platform darwin {
     patchfiles-append   patch-hints_darwin.sh.diff

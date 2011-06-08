@@ -1,6 +1,7 @@
 # $Id: Portfile 76832 2011-03-10 04:15:06Z jmr@macports.org $
 
 PortSystem      1.0
+PortGroup	select 1.0
 
 name            perl5.10
 version         5.10.1
@@ -27,6 +28,9 @@ checksums           md5     82400c6d34f7b7b43d0196c76cd2bbb1 \
                     rmd160  840b3a5ac3d7f517770ce789676ebd9154d9ee5a
 
 patchfiles	patch-Configure.diff
+
+select.group	perl
+select.file	${filespath}/perl${branch}
 
 platform darwin {
     patchfiles-append   patch-hints_darwin.sh.diff \
