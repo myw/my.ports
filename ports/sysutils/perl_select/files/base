@@ -60,6 +60,6 @@ bin/wxperl_overload
 bin/wxperl_xspp
 bin/xpath
 bin/xsubpp
-share/man/man1
-share/man/man3
+share/man/man1p
+share/man/man3p
 lib/perl5/${version}
