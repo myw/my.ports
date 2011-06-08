@@ -28,9 +28,16 @@ destroot {
     select::install perl ${filespath}/none
 }
 
+platform darwin 10 {
+    post-destroot {
+        select::install python ${filespath}/perl5.8.9-apple
+        select::install python ${filespath}/perl5.10.0-apple
+    }
+}
+
 livecheck.type     none
 
 # Documentation for perl ports:
 #   PortGroup select 1.0
 #   select.group            perl
-#   select.file             ${filespath}/perl[string map {. {}} ${branch}]
+#   select.file             ${filespath}/perl${branch}
