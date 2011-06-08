@@ -1,0 +1,2 @@
+perl_select 382
+portdir sysutils/perl_select description {common files for selecting default perl version} homepage http://www.macports.org/ epoch 0 platforms darwin name perl_select license BSD maintainers mywolfson long_description {This port installs files that allow 'port select' to be used to create links to the preferred default version of perl.} version 0.1 categories sysutils revision 1
