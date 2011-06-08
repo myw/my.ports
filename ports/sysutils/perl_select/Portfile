@@ -1,0 +1,36 @@
+# $Id: Portfile 78591 2011-05-13 16:57:49Z jmr@macports.org $
+
+PortSystem 1.0
+PortGroup select 1.0
+
+name                    perl_select
+version                 0.1
+revision                1
+categories              sysutils
+platforms               darwin
+license                 BSD
+maintainers             mywolfson
+supported_archs         noarch
+description             common files for selecting default perl version
+long_description        This port installs files that allow 'port select' to \
+                        be used to create links to the preferred default \
+                        version of perl.
+
+homepage                http://www.macports.org/
+
+distfiles
+
+use_configure           no
+build                   {}
+# install all files
+destroot {
+    select::install perl ${filespath}/base
+    select::install perl ${filespath}/none
+}
+
+livecheck.type     none
+
+# Documentation for perl ports:
+#   PortGroup select 1.0
+#   select.group            perl
+#   select.file             ${filespath}/perl[string map {. {}} ${branch}]
