@@ -60,6 +60,4 @@ bin/splain-5.12
 -
 -
 bin/xsubpp-5.12
-share/man/man1p
-share/man/man3p
 lib/perl5/5.12.3
