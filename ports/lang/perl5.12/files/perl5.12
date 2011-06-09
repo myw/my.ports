@@ -1,7 +1,7 @@
 bin/a2p-5.12
 bin/c2ph-5.12
--
--
+bin/config_data-5.12
+bin/corelist-5.12
 bin/cpan2dist-5.12
 bin/cpan-5.12
 bin/cpanp-run-perl-5.12
@@ -20,7 +20,7 @@ bin/find2perl-5.12
 -
 bin/h2ph-5.12
 bin/h2xs-5.12
--
+bin/instmodsh-5.12
 -
 -
 bin/libnetcfg-5.12
@@ -29,9 +29,9 @@ bin/libnetcfg-5.12
 -
 -
 -
--
+bin/perl5.12
 bin/perlbug-5.12
-bin/perlcc-5.12
+-
 bin/perldoc-5.12
 bin/perlivp-5.12
 bin/perlthanks-5.12
@@ -48,10 +48,10 @@ bin/podselect-5.12
 bin/prove-5.12
 bin/psed-5.12
 bin/pstruct-5.12
--
--
+bin/ptar-5.12
+bin/ptardiff-5.12
 bin/s2p-5.12
--
+bin/shasum-5.12
 -
 -
 bin/splain-5.12
@@ -60,6 +60,6 @@ bin/splain-5.12
 -
 -
 bin/xsubpp-5.12
-share/man/man1
-share/man/man3
-lib/perl5/perl5.12.3
+share/man/man1p
+share/man/man3p
+lib/perl5/5.12.3
