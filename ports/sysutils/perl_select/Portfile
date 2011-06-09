@@ -30,8 +30,8 @@ destroot {
 
 platform darwin 10 {
     post-destroot {
-        select::install python ${filespath}/perl5.8.9-apple
-        select::install python ${filespath}/perl5.10.0-apple
+        select::install perl ${filespath}/perl5.8.9-apple
+        select::install perl ${filespath}/perl5.10.0-apple
     }
 }
 
